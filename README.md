@@ -5,6 +5,7 @@
 - 配置webpack的cache.type为filesystem, 开启缓存
 - 初始化一个Vue3+Typescript的项目, 建立一个根单文件组件并使用ts版setup语法糖, 建立一个子单文件组件并使用ts版setup语法糖, 在根组件中导入子组件
 - 第一次编译, 正常通过能运行
+- (补充, 这里漏了关键一步, 就是这里需要改动inside.vue的模板内容, 即让缓存失效, 然后再编译才会失败, 否则直接用缓存的话则不会失败)
 - 后续编译, 编译失败, 报下述错误
 ```
 TypeError: Cannot read property 'content' of null
